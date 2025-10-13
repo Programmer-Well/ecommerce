@@ -1,16 +1,15 @@
 import User from "../../model/users/Users.js"
 
-const update = async(data,id) => {
-    const user = await User.update(data, {
-        where: {
+const remove = async (id) => {
+    const user = await User.destroy({
+        where:{
             id
         }
     })
-
+    
     if(!user){
         return false
     }
     return user
 }
-
-export default update
+export default remove

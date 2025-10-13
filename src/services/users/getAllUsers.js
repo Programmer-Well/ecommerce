@@ -1,6 +1,8 @@
+import User from "../../model/users/Users.js"
 
-function getAll(req, res){
-
+async function getAll(req, res){
+    const users = await User.findAll()
+    return users
 }
 
 export default getAll
