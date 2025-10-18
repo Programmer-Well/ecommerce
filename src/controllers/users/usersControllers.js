@@ -4,7 +4,6 @@ import create from '../../services/users/createUsers.js'
 import remove from '../../services/users/removeUsers.js'
 import update from '../../services/users/updateUsers.js'
 
-
 async function getUser(req, res) {
     try {
         const id = req.params.id

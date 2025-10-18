@@ -1,15 +1,17 @@
 import User from "../../model/users/Users.js"
 
 const update = async(data,id) => {
-    const user = await User.update(data, {
+    const qtd = await User.update(data, {
         where: {
             id
         }
     })
 
-    if(!user){
+    if(!qtd){
         return false
     }
+
+    const user = await User.findByPk(id)
     return user
 }
 
