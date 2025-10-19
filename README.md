@@ -32,7 +32,7 @@ O projeto segue uma estrutura organizada para separação de responsabilidades:
 │   │   ├── users/
 │   │   ├── products/
 │   │   └── category/         # Lógica de requisição e resposta (req, res)
-|   ├── middleware/           # middleware para autenticação e proteção das rotas
+|   ├── middleware/           # Autenticação e proteção das rotas
 |   |   └── auth.js
 │   ├── models/
 │   │   ├── index.js          # Arquivo central que inicializa modelos e relações
